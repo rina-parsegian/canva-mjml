@@ -1,0 +1,81 @@
+<mjml>
+  <mj-head>
+    <mj-title>Canva Design Challenge</mj-title>
+    <mj-style>
+      * {
+        box-sizing: border-box;
+      }
+
+      .bg-color {
+        background-color: #fff;
+      }
+    </mj-style>
+    <mj-style inline="inline">
+      .challenge-link {
+        color: #2f3337;
+      }
+    </mj-style>
+  </mj-head>
+  <mj-body background-color="#f2f2f2">
+    
+    <!-- header -->
+    <mj-section padding="20px 0 0"></mj-section>
+    <mj-section padding="50px 40px 30px" css-class="bg-color" border-radius="8px 8px 0 0">
+      <mj-column padding="0">
+        <mj-image src="http://192.168.0.15:5500/assets/canva-logo.png" alt="canva logo" href="https://www.canva.com" width="80px" align="left" padding="6px 0 0">
+      </mj-column>
+      <mj-column padding="0">
+        <mj-button background-color="#f2f3f5" color="#2f3337" font-weight="bold" line-height="1.6" align="right" padding="0" href="http://www.canva.com" font-family="arial" inner-padding="9px 16px" font-size="14px">
+          Design with Canva        
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- header title -->
+    <mj-section padding="30px 40px 10px" css-class="bg-color">
+      <mj-column>
+        <mj-text font-size="32px" font-weight="700" align="left" font-family="arial" padding="0" line-height="1.2" color="#0d1216">
+          Your Challenge: Create a Mood 
+          Board for an Upcoming Event
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- header content -->
+    <mj-section padding="10px 40px 15px" css-class="bg-color">
+      <mj-column>
+        <mj-text font-size="14px" font-weight="normal" align="left" font-family="arial" padding="0" line-height="1.6" color="#2f3337">
+          Elevate your event planning this <strong>#CanvaDesignChallenge</strong> by creating a Mood Board. Use a Canva Whiteboard, images, graphics, and other elements from the library to get inspired and set the mood for your event. Share your Mood Board with us, and you could win a Canva prize pack.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- designing button -->
+    <mj-section padding="10px 40px 25px" css-class="bg-color">
+      <mj-column>
+        <mj-button background-color="#8b3dff" color="#fff" font-weight="bold" line-height="1.6" padding="0" href="http://www.canva.com" font-family="arial" inner-padding="9px 16px" align="left" font-size="14px">
+          Start designing       
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <!-- mood board img -->
+    <mj-section padding="0">
+      <mj-column>
+        <mj-image src="http://192.168.0.15:5500/assets/mood-board.png" alt="mood board" href="https://www.canva.com" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <!-- challenge T&C's -->
+    <mj-section padding="30px 40px 50px" css-class="bg-color" border-radius="0 0 8px 8px">
+      <mj-column>
+        <mj-text font-size="14px" font-weight="normal" align="left" font-family="arial" padding="0" line-height="1.6">
+          <a href="#" class="challenge-link">*Challenge Terms & Conditions</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- spacer -->
+    <mj-section padding="20px 0 0"></mj-section>
+  </mj-body>
+</mjml>
