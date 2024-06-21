@@ -1,40 +1,97 @@
 <mjml>
   <mj-head>
     <mj-title>Canva Design Challenge</mj-title>
+
+    <mj-attributes>
+      <mj-class name="bg-color" background-color="#fff"/>
+    </mj-attributes>
+
+    <mj-breakpoint width="593px"/>
+
     <mj-style>
       * {
         box-sizing: border-box;
       }
 
-      .bg-color {
-        background-color: #fff;
+      .circle-1 {
+        max-width: 20px;
+        padding-bottom: 14px;
       }
+
+      .design-link {
+        color: #8B3DFF;
+      }
+
+      /* 593px or smaller apply these styles */
+      @media only screen and (max-width: 593px){
+        .album-info {
+          padding: 10px 0px 5px !important;  
+        }
+
+        .arrow-icon {
+          padding-bottom: 14px !important;
+        }
+      }
+
+      /* 479px or smaller apply these styles */
+      @media only screen and (max-width: 479px){
+        .challenge-content {
+          padding-left: 0px !important;
+        }
+      }
+
     </mj-style>
     <mj-style inline="inline">
       .challenge-link {
         color: #2f3337;
       }
+
+      .circle-number {
+        background-color: #8b3dff;
+        border-radius: 50%;
+      }
+
+      .social-link {
+        text-decoration: underline;
+        color: #0d1217;
+      }
+
+      .message-info {
+        text-decoration: underline;
+        color: #0d1217;
+      }
+
+      .app-links {
+        max-width: 180px;
+      }
+
+      .icons {
+        max-width: 200px;
+        padding: 20px 0px 50px;
+      }
+
+      .playlist-link {
+        text-decoration: none;
+        color: #8b3dff;
+      }
     </mj-style>
+
   </mj-head>
   <mj-body background-color="#f2f2f2">
     
     <!-- header -->
     <mj-section padding="20px 0 0"></mj-section>
-    <mj-section padding="50px 40px 30px" css-class="bg-color" border-radius="8px 8px 0 0">
-      <mj-column padding="0">
-        <mj-image src="http://192.168.0.15:5500/assets/canva-logo.png" alt="canva logo" href="https://www.canva.com" width="80px" align="left" padding="6px 0 0">
+    <mj-section mj-class="bg-color" border-radius="15px 15px 0 0" padding="50px 30px 50px">
+      <mj-column padding="0" vertical-align="middle" css-class="column-1">
+        <mj-image src="https://i.postimg.cc/LXHZSJmy/canva-logo.png" alt="canva logo" href="https://www.canva.com" width="110px" padding="0">
       </mj-column>
-      <mj-column padding="0">
-        <mj-button background-color="#f2f3f5" color="#2f3337" font-weight="bold" line-height="1.6" align="right" padding="0" href="http://www.canva.com" font-family="arial" inner-padding="9px 16px" font-size="14px">
-          Design with Canva        
-        </mj-button>
-      </mj-column>
+      
     </mj-section>
 
     <!-- header title -->
-    <mj-section padding="30px 40px 10px" css-class="bg-color">
+    <mj-section padding="15px 30px 15px" mj-class="bg-color">
       <mj-column>
-        <mj-text font-size="32px" font-weight="700" align="left" font-family="arial" padding="0" line-height="1.2" color="#0d1216">
+        <mj-text font-size="28px" font-weight="700" align="left" font-family="arial" padding="0" line-height="1.2" color="#0d1217">
           Your Challenge: Create a Mood 
           Board for an Upcoming Event
         </mj-text>
@@ -42,18 +99,18 @@
     </mj-section>
 
     <!-- header content -->
-    <mj-section padding="10px 40px 15px" css-class="bg-color">
+    <mj-section padding="10px 30px 15px" mj-class="bg-color">
       <mj-column>
-        <mj-text font-size="14px" font-weight="normal" align="left" font-family="arial" padding="0" line-height="1.6" color="#2f3337">
+        <mj-text font-size="14px" font-weight="normal" align="left" font-family="arial" padding="0" line-height="1.6" color="#0d1217">
           Elevate your event planning this <strong>#CanvaDesignChallenge</strong> by creating a Mood Board. Use a Canva Whiteboard, images, graphics, and other elements from the library to get inspired and set the mood for your event. Share your Mood Board with us, and you could win a Canva prize pack.
         </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- designing button -->
-    <mj-section padding="10px 40px 25px" css-class="bg-color">
+    <mj-section padding="10px 30px 30px" mj-class="bg-color">
       <mj-column>
-        <mj-button background-color="#8b3dff" color="#fff" font-weight="bold" line-height="1.6" padding="0" href="http://www.canva.com" font-family="arial" inner-padding="9px 16px" align="left" font-size="14px">
+        <mj-button background-color="#8b3dff" color="#fff" font-weight="bold" line-height="1.6" padding="0" href="https://www.canva.com/design/DAF0Gua1EYw/z8Pok4L1U1_sg1usVbQA5w/remix?utm_source=braze_email&utm_medium=crm&utm_campaign=email_schedule_engagement_designchallenge_2023popmusiclaunch_withpopmusicmodule_231115&%243p=e_ab&_branch_match_id=1114730865946274871&_branch_referrer=H4sIAAAAAAAAAzWOT0%2FEIBDFPw0e2wV2jTHZmCa1XjzoQRNPZMqOhSwDBIqY%2FfTSVZM5vPd%2B88%2Bsa8z3ff9p5tpBjJ2z%2FtzL%2BMDEXsYjKphvmgzJLtaDUyW5o9lmmByYmFrVWjsN%2Fgs6Haj5E2a7%2BCbGYdo9FeCPH7W5y91LOO%2Bf%2BRtXeeElv8%2Bvw2EDCcl%2BMzmVlVQOJWlkcpwTXFAhgXVM3G6I8GQLNaQT%2FUUaKMJ2S47XTpW1wVNxbdAvsCChX9XvO9qAcy1FJXZCxhCpZKsdlEZUtav5jyhcFwjJOT%2F8AGpyfm4dAQAA" font-family="arial" inner-padding="9px 16px" align="left" font-size="14px">
           Start designing       
         </mj-button>
       </mj-column>
@@ -62,20 +119,275 @@
     <!-- mood board img -->
     <mj-section padding="0">
       <mj-column>
-        <mj-image src="http://192.168.0.15:5500/assets/mood-board.png" alt="mood board" href="https://www.canva.com" padding="0"/>
+        <mj-image src="https://i.postimg.cc/WpYJRpCn/album-cover-image.png" alt="mood board" href="https://www.canva.com" padding="0"/>
       </mj-column>
     </mj-section>
 
     <!-- challenge T&C's -->
-    <mj-section padding="30px 40px 50px" css-class="bg-color" border-radius="0 0 8px 8px">
+    <mj-section padding="30px 30px 50px" mj-class="bg-color" border-radius="0 0 15px 15px">
       <mj-column>
-        <mj-text font-size="14px" font-weight="normal" align="left" font-family="arial" padding="0" line-height="1.6">
-          <a href="#" class="challenge-link">*Challenge Terms & Conditions</a>
+        <mj-text font-size="12px" font-weight="normal" align="left" font-family="arial" padding="0" line-height="1.6" color="#0d1217">
+          <a href="https://www.canva.com/policies/canva-design-challenge-terms-conditions/?utm_source=braze_email&utm_medium=crm&utm_campaign=email_schedule_engagement_designchallenge_2023popmusiclaunch_withpopmusicmodule_231115" class="challenge-link">*Challenge Terms & Conditions</a>
         </mj-text>
       </mj-column>
     </mj-section>
 
     <!-- spacer -->
     <mj-section padding="20px 0 0"></mj-section>
+    <!-- challenge info section -->
+    <mj-section mj-class="bg-color" border-radius="15px 15px 0 0" padding="50px 30px 20px">
+      <mj-column>
+        <mj-text font-size="24px" color="#0d1217" font-weight="bold" font-family="arial" padding="0" line-height="1.6" color="#0d1217">
+          How Do I Enter?
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="20px 30px 20px">
+      <mj-column width="20px" padding-top="4px" css-class="circle-1">
+        <mj-text font-size="14px" color="#fff" font-weight="normal" font-family="arial" padding="0" line-height="1.6"  css-class="circle-number" align="center">
+          1 
+        </mj-text>
+      </mj-column>
+      <mj-column width="94%">
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="0 0 0 15px" line-height="1.6" color="#0d1217" css-class="challenge-content">
+          Design an original playlist cover inspired by one of the three themes below using Canva graphics and illustrations only (no photos), and be sure to follow Apple Music's cover art guidelines
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="20px 30px 20px">
+      <mj-column width="20px" padding-top="4px" css-class="circle-1">
+        <mj-text font-size="14px" color="#fff" font-weight="normal" font-family="arial" padding="0" line-height="1.6"  css-class="circle-number" align="center">
+          2 
+        </mj-text>
+      </mj-column>
+      <mj-column width="94%">
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="0 0 0 15px" line-height="1.6" color="#0d1217" css-class="challenge-content">
+          Share your design on Instagram or X/Twitter and tag #CanvaDesignChallenge (we can only view public accounts)
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="20px 30px 20px">
+      <mj-column width="20px" padding-top="4px" css-class="circle-1">
+        <mj-text font-size="14px" color="#fff" font-weight="normal" font-family="arial" padding="0" line-height="1.6"  css-class="circle-number" align="center">
+          3
+        </mj-text>
+      </mj-column>
+      <mj-column width="94%">
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="0 0 0 15px" line-height="1.6" color="#0d1217" css-class="challenge-content">
+          We'll choose three designs to be featured on Apple Music, and showcase our favorites to the Canva community.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- buttons -->
+    <mj-section padding="30px 30px 30px" mj-class="bg-color">
+      <mj-column>
+        <mj-button background-color="#8b3dff" color="#fff" font-weight="bold" line-height="1.6" padding="0" href="https://www.canva.com/design/DAF0Gua1EYw/z8Pok4L1U1_sg1usVbQA5w/remix?utm_source=braze_email&utm_medium=crm&utm_campaign=email_schedule_engagement_designchallenge_2023popmusiclaunch_withpopmusicmodule_231115&%243p=e_ab&_branch_match_id=1114730865946274871&_branch_referrer=H4sIAAAAAAAAAzWOT0%2FEIBDFPw0e2wV2jTHZmCa1XjzoQRNPZMqOhSwDBIqY%2FfTSVZM5vPd%2B88%2Bsa8z3ff9p5tpBjJ2z%2FtzL%2BMDEXsYjKphvmgzJLtaDUyW5o9lmmByYmFrVWjsN%2Fgs6Haj5E2a7%2BCbGYdo9FeCPH7W5y91LOO%2Bf%2BRtXeeElv8%2Bvw2EDCcl%2BMzmVlVQOJWlkcpwTXFAhgXVM3G6I8GQLNaQT%2FUUaKMJ2S47XTpW1wVNxbdAvsCChX9XvO9qAcy1FJXZCxhCpZKsdlEZUtav5jyhcFwjJOT%2F8AGpyfm4dAQAA" font-family="arial" inner-padding="9px 16px" align="center" font-size="14px">
+          Start designing       
+        </mj-button>
+      </mj-column>
+    </mj-section>
+
+    <mj-section mj-class="bg-color" padding="20px 30px 0px">
+      <mj-column>
+        <mj-text font-size="12px" font-weight="normal" font-family="arial" padding="0" line-height="1.6" color="#0d1217" align="left">
+          Enter by 23/11/23 at 12:00 PM AEDT. 18+ Only. Promoter: Canva Pty Ltd.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- challenge T&C's -->
+    <mj-section padding="5px 30px 50px" mj-class="bg-color">
+      <mj-column>
+        <mj-text font-size="12px" font-weight="normal" font-family="arial" padding="0" line-height="1.6" color="#0d1217" align="left">
+          <a href="https://www.canva.com/policies/canva-design-challenge-terms-conditions/?utm_source=braze_email&utm_medium=crm&utm_campaign=email_schedule_engagement_designchallenge_2023popmusiclaunch_withpopmusicmodule_231115" class="challenge-link">*Challenge Terms & Conditions</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider -->
+    <mj-section mj-class="bg-color" padding="0px 30px 0px">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="solid" border-color="#cbd0d6" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <!-- playlist title -->
+    <mj-section mj-class="bg-color" padding="50px 30px 15px">
+      <mj-column>
+        <mj-text font-size="24px" color="#0d1217" font-weight="bold" font-family="arial" padding="0" line-height="1.6" color="#0d1217">
+          Design For One Of These Canva Playlists
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- playlist content -->
+    <mj-section padding="10px 30px 15px" mj-class="bg-color">
+      <mj-column>
+        <mj-text font-size="14px" font-weight="normal" align="left" font-family="arial" padding="0" line-height="1.6" color="#0d1217">
+          Choose one of these three Canva Playlists, and design cover art that represents the playlist's title and description. The winners' designs will be featured as playlist covers on Apple Music.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- album cover & content -->
+    <mj-section padding="20px 30px 20px" mj-class="bg-color">
+      <mj-column>
+        <mj-image src="https://i.postimg.cc/0jjM6hMD/first-album.png" alt="main character album" padding="0 0 10px" border-radius="8px"/>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" font-weight="bold" font-family="arial" padding="23px 30px 10px" line-height="1.6" color="#0d1217" align="center" css-class="album-info">
+          Main Character Energy
+        </mj-text>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="10px 30px 0px" line-height="1.6" color="#0d1217" align="center" css-class="album-info">
+          Put Some Swagger In Your Step With These Electrifying Tracks 
+        </mj-text>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="12px 30px 20px" line-height="1.6" color="#8b3dff" align="center" css-class="album-info">
+          <a href="https://music.apple.com/au/playlist/canvas-main-character-energy/pl.7a37da570aa94908a8c4604ddf105820" class="playlist-link">See Playlist</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 30px 20px" mj-class="bg-color">
+      <mj-column>
+        <mj-image src="https://i.postimg.cc/dt7ZJPKK/second-album.png" alt="main character album" padding="0 0 10px" border-radius="8px"/>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" font-weight="bold" font-family="arial" padding="16px 30px 10px" line-height="1.6" color="#0d1217" align="center" css-class="album-info">
+          Aussie Essentials
+        </mj-text>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="10px 30px 0px" line-height="1.6" color="#0d1217" align="center" css-class="album-info">
+          The Iconic Tracks And Fresh Hits That Represent The Best In Australian Music 
+        </mj-text>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="12px 30px 20px" line-height="1.6" color="#8b3dff" align="center" css-class="album-info">
+          <a href="https://music.apple.com/au/playlist/canvas-aussie-essentials/pl.c7da738c67e84be982a9d7b88757af53" class="playlist-link">See Playlist</a> 
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <mj-section padding="20px 30px 50px" border-radius="0 0 15px 15px" mj-class="bg-color">
+      <mj-column>
+        <mj-image src="https://i.postimg.cc/pLz9nfTG/third-album.png" alt="main character album" padding="0 0 10px" border-radius="8px"/>
+      </mj-column>
+      <mj-column>
+        <mj-text font-size="16px" font-weight="bold" font-family="arial" padding="22px 30px 10px" line-height="1.6" color="#0d1217" align="center" css-class="album-info">
+          Happy Holidays
+        </mj-text>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="10px 30px 10px" line-height="1.6" color="#0d1217" align="center" css-class="album-info">
+          All Your Faves For The Festive Season In One Merry Mix
+        </mj-text>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="12px 30px 20px" line-height="1.6" color="#8b3dff" align="center" css-class="album-info">
+          <a href="https://music.apple.com/au/playlist/canvas-happy-holidays/pl.dd9d09b8b8a94ef3ac497fcbfc738589" class="playlist-link">See Playlist</a> 
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- spacer -->
+    <mj-section padding="20px 0 0"></mj-section>
+
+    <!-- school link -->
+    <mj-section padding="30px 30px 30px" border-radius="15px 15px 15px 15px" mj-class="bg-color">
+      <mj-column width="8%" vertical-align="middle">
+        <mj-image src="https://i.postimg.cc/Bv51RTfL/arrow.png" alt="arrow right icon" width="40px" padding="2px 0 0" css-class="arrow-icon"/>
+      </mj-column>
+      <mj-column width="92%">
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="0 0 0 16px" line-height="1.6" color="#0d1217">
+          <a href="https://www.canva.com/designschool/" class="design-link" color="#8b3dff">Canva Design School</a> has thousands of free tutorials on how to design like a pro, explore design trends, color and more!
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- email info -->
+    <mj-section padding="30px 30px" background-color="#f2f2f2">
+      <mj-column>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="0" line-height="1.6" color="#0d1217" align="center">
+          You are receiving this email because you signed up to Canva.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- divider -->
+    <mj-section padding="0px 30px 0px" background-color="#f2f2f2">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="solid" border-color="#cbd0d6" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <!-- socials -->
+    <mj-section padding="15px 30px" background-color="#f2f2f2"> 
+      <mj-column width="100px">
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="5px 0" line-height="1.6" color="#0d1217" align="center">
+            Get Canva for:
+        </mj-text>
+      </mj-column>   
+      <mj-group css-class="app-links">
+        <mj-column>
+         <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="5px 0" line-height="1.6" color="#0d1217" align="center">
+          <a href="https://www.canva.com/download/mac/" class="social-link">MAC</a>
+         </mj-text>
+        </mj-column>
+       <mj-column>
+        <mj-text font-size="14px" font-weight="normal" font-family="arial" padding="5px 0" line-height="1.6" color="#0d1217" align="center">
+          <a href="https://www.canva.com/download/windows/" class="social-link">Windows</a>
+        </mj-text>
+       </mj-column>
+      </mj-group>  
+    </mj-section>
+
+    <!-- divider -->
+    <mj-section padding="0px 30px 0px" background-color="#f2f2f2">
+      <mj-column>
+        <mj-divider border-width="1px" border-style="solid" border-color="#cbd0d6" padding="0"/>
+      </mj-column>
+    </mj-section>
+
+    <!-- address info -->
+    <mj-section padding="30px 30px 10px" background-color="#f2f2f2">
+      <mj-column>
+        <mj-text font-size="12px" font-weight="normal" font-family="arial" padding="0" line-height="1.6" color="#0d1217" align="center">
+          This advertisement is made for you with love from Canva<br>
+          Canva Pty Ltd, 110 Kippax St, NSW 2010, Australia. ABN 80 158 929 938<br>
+          If you need assistance, get in touch with us via our Help Center.
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- subscribe info -->
+    <mj-section padding="10px 30px" background-color="#f2f2f2">
+      <mj-column>
+        <mj-text font-size="12px" font-weight="normal" font-family="arial" padding="0" line-height="1.6" color="#0d1217" align="center">
+          <a href="https://www.canva.com" class="message-info">visit Canva.com</a>
+        </mj-text>
+        <mj-text font-size="12px" font-weight="normal" font-family="arial" padding="0" line-height="1.6" color="#0d1217" align="center">
+          <a href="https://www.canva.com" class="message-info">Unsubscribe</a>
+        </mj-text>
+        <mj-text font-size="12px" font-weight="normal" font-family="arial" padding="0" line-height="1.6" color="#0d1217" align="center">
+          <a href="https://www.canva.com" class="message-info">Message Preferences</a>
+        </mj-text>
+      </mj-column>
+    </mj-section>
+
+    <!-- social icons -->
+    <mj-section padding="0 30px 0">
+      <mj-group css-class="icons">
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/SKbMZZ3b/facebook.png" alt="facebook icon" href="https://www.facebook.com/canva" width="24px" padding="0"/>
+        </mj-column>
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/zX9bBtJH/twitter.png" alt="twitter icon" href="https://www.twitter.com/canva" width="24px" padding="0"/>
+        </mj-column>
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/mD81gTDT/pinterest.png" alt="pinterest icon" href="https://www.pinterest.com/canva" width="24px" padding="0"/>
+        </mj-column>
+        <mj-column>
+          <mj-image src="https://i.postimg.cc/J0FyjKZg/instagram.png" alt="instagram icon" href="https://www.instagram.com/canva" width="24px" padding="0"/>
+        </mj-column>
+      </mj-group>
+    </mj-section>
+
+
   </mj-body>
 </mjml>
